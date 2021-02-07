@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <section> 
+        <div id="header">
+            <div id="logo">
+                <img src="./Khaystix-Web-dev-tutorial-main/GistHouselogo.jpg" alt="logo">
+            </div>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="signup.html">Sign Up</a></li> 
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+            </nav>
+            <a href="contact.html" class="cta"> <button class="btn1">Reach Out</button></a> 
+        </div>
+
+        <div id="content">
+         
+            <section>
+                <div id="bannerimg">
+                    <div id="transparent_box">
+                        <div id="section_text">
+                            <form action="">
+                                <small id="passcheck" style="color:gold;"></small>
+                                <small id="namecheck" style="color:gold;"></small>
+                                <input type="text" placeholder="Firstname" id="name" onmouseout="check()" required>
+                                <input type="text" placeholder="Lastname" onmouseout="check()" id="lname" required>
+                                <input type="text" placeholder="Email" onmouseout="check()" id="email"  required>
+                                <input type="password" placeholder="Password"  id="pass" required>
+                                <input type="password" placeholder=" Confirm Password" onmouseout="passcheck()" id="confirmpass" required>
+                               
+                               <a href="#" class="cta" onclick="alert('You Have Registered!!')"> <button class="btn2">Sign Up</button></a>
+                              
+                            </form>
+                        </div>
+                       
+    
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section>
+                <div id="section_div">
+                    <h3>Ready for an <i>Overdrive</i> </h3>
+ 
+                </div>
+
+            </section>
+
+            <div id="copyright"> <small>&copy; 2021 GH Inc-------- with &hearts; by Dara Adenipekun</small> </div>
+    <div>
+        <script>
+          
+           
+            function check(){
+
+                let text = document.getElementById('name').value;
+            let ltext = document.getElementById('lname').value;
+            let emailtext = document.getElementById('email').value;
+            let smalltext = document.getElementById('namecheck');
+                if (text == "") {
+                    smalltext.innerHTML= "Input must be filled";
+                    
+                }
+                else if (text !== "") {
+                    smalltext.innerHTML= "";
+                }
+                if (ltext == "") {
+                    smalltext.innerHTML= "Input must be filled";
+                    
+                }
+                else if (ltext !== "") {
+                    smalltext.innerHTML= "";
+                }
+                if (emailtext == "") {
+                    smalltext.innerHTML= "Input must be filled";
+                }
+                else if (emailtext !== "") {
+                    smalltext.innerHTML= "";
+                }
+               
+                
+                
+                
+
+            }
+            function passcheck() {
+            let passtext = document.getElementById('passcheck');
+            let password = document.getElementById('pass').value;
+            let confirmpassword = document.getElementById('confirmpass').value
+                if (password !== confirmpassword ) { 
+                    passtext.innerHTML= "Password Do not match";   
+                    
+                }
+                else if (password == confirmpassword) {
+                    passtext.innerHTML= "<span style='color:green'>Your Passwords match!</span>";
+                }
+                else if (password == "") {
+                    passtext.style.display = "none"
+                } 
+                  
+            }
+
+        </script>
+</body>
+</html>

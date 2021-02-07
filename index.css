@@ -1,0 +1,187 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li, a, button, p, small{
+font-size:16px;
+text-decoration:none;
+}
+span{
+   color:#6699FF;
+}
+#header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left:10%;
+    padding-right:10%;
+    background-color: rgb(247, 247, 247);
+    box-shadow: rgb(0, 0, 0) 0px 0px 3px;
+    box-sizing: border-box;
+    position:fixed;
+    z-index:3;
+}
+#logo{
+    margin-top: 2em;
+    width:50px;
+    height:70px;
+    cursor:pointer;
+    
+    
+
+}
+#logo img{
+    width:100%;
+}
+.nav_links{
+    list-style:none;
+}
+.nav_links li{
+display:inline-block;
+padding:0px 20px;
+
+}
+.nav_links li a{
+    color:rgb(163, 8, 8);
+    font-size: 1.5vw;
+ 
+    
+}
+.nav_links li a:hover{
+    border:2px solid black;
+    padding:10px;
+    border-radius: 50px;
+    color:rgb(163, 8, 8);
+
+
+}
+.btn1{
+    padding:10px 20px;
+    background-color:rgb(163, 8, 8);
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+.btn1:hover{
+    padding:10px 20px;
+    background-color:rgb(31, 1, 1);
+    color:white;
+    border:none;
+    border-radius: 50px;
+
+}
+#content{
+    width: 100%;
+    border:solid white 1px;
+    
+}
+#bannerimg{
+    width:100%;
+    height:40vw;
+    background-image: url("./Khaystix-Web-dev-tutorial-main/cool-wallpaper-29.jpg");
+    background-size: cover;
+    margin-top: 70px;
+}
+#transparent_box{
+    width:100%;
+    height:40vw;
+    background-color:rgba(0, 0, 0, 0.8);
+
+}
+#section_text{
+    width:100%;
+    height:30vw;
+    padding-top: 8vw;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+#section_text h3{
+    font-size:3vw;
+    color:white;
+    padding-top:50px;
+}
+#section_text p{
+    font-size:1.5vw;
+    color:white;
+    margin:2vw;
+  
+   
+}
+#section_div{
+    width:100%;
+    height:10vw;
+    background-color:rgb(163, 8, 8);
+   
+   
+}
+#section_div h3{
+    font-size:3vw;
+    color:white;
+    padding-top:3vw;
+    text-align: center;
+
+}
+#copyright{
+    width:100%;
+    height:3vh;
+    text-align: center;
+    justify-content: center;
+    padding: 1vw;
+    color:rgb(163, 8, 8);
+}
+#copyright small{
+    font-size:1.5vw;
+   
+}
+
+
+/* ========================================================= */
+
+
+form{
+  
+  
+    margin-bottom: 1vw;
+   
+    
+}
+input{
+    display:block;
+    width:50%;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 1vw;
+    padding:1.5vw;
+    outline: none;
+    border:none;
+    border-bottom:1px solid red;
+    border-radius: 20px;
+}
+
+
+.btn2{
+    width:50%;
+    padding:10px 20px;
+    background-color:rgb(163, 8, 8); ;
+    color:white;
+    border:none;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.btn2:hover{
+  
+    padding:10px 20px;
+    background-color:red;
+    color:white;
+    border:none;
+    border-radius: 50px;
+
+}
